@@ -1,10 +1,10 @@
 import { dts } from 'rollup-plugin-dts';
 
 export default {
-  input: 'src/index.ts',
+  input: './tmp/index.d.ts',
   output: {
     format: 'es',
-    file: 'dist/index.d.ts',
+    file: 'lib/index.d.ts',
     sourcemap: true,
   },
   plugins: [dts({ sourcemap: true })],
