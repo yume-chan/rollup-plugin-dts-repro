@@ -1,1 +1,1 @@
-{"version":3,"file":"index.d.ts","names":["Emitter"],"sources":["../src/index.ts"],"mappings":";;;;;YAEY;EACV;;qBAGW,GAAGA,eAAAA,QAAQ"}
+{"version":3,"file":"index.d.ts","names":[],"sources":["../src/types.ts"],"mappings":";YAEY,QAAQ,kCAClB,cAAc"}

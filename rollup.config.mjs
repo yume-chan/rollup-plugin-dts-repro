@@ -7,6 +7,6 @@ export default defineConfig({
     format: "es",
     dir: "lib",
   },
-  external: ["mitt"],
+  external: (id) => id.includes("node_modules"),
   plugins: [dts({ dtsOnly: true })],
 });
