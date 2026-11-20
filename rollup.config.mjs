@@ -1,11 +1,12 @@
-import { dts } from 'rollup-plugin-dts';
+import { dts } from "rolldown-plugin-dts";
+import { defineConfig } from "rolldown";
 
-export default {
-  input: './tmp/index.d.ts',
+export default defineConfig({
+  input: "./src/index.ts",
   output: {
-    format: 'es',
-    file: 'lib/index.d.ts',
-    sourcemap: true,
+    format: "es",
+    dir: "lib",
   },
-  plugins: [dts({ sourcemap: true })],
-}
+  external: ["mitt"],
+  plugins: [dts({ dtsOnly: true })],
+});

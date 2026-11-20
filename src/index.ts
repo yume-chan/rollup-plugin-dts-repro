@@ -1,7 +1,7 @@
-import type { ProtocolError } from './Errors.js';
+import mitt, { type Emitter } from "./mitt.js";
 
-export function rewriteError(
-  error: ProtocolError,
-) {
-  return error;
-}
+export type Events = {
+  foo: string;
+};
+
+export const A: Emitter<Events> = mitt<Events>();
